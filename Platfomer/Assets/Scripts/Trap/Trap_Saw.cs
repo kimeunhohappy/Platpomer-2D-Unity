@@ -47,8 +47,12 @@ public class Trap_Saw : Trap
     {
         base.OnCollisionEnter2D(collision);
     }
-    protected virtual void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnTriggerEnter2D(Collider2D collision)
     {
         base.OnTriggerEnter2D(collision);
+        if(collision.CompareTag("Player"))
+        {
+            Destroy(collision.gameObject);
+        }
     }
 }

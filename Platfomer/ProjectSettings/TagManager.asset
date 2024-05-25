@@ -47,6 +47,6 @@ TagManager:
   - name: Player
     uniqueID: 3977889107
     locked: 0
-  - name: Playform
+  - name: Platform
     uniqueID: 1870517849
     locked: 0

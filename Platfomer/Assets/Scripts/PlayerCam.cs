@@ -16,7 +16,10 @@ public class PlayerCam : MonoBehaviour
         offset = transform.position - PlayerTransform.position;
         fixedyposition = transform.position.y;
     }
-
+    void SetOffset()
+    {
+        offset = transform.position - PlayerTransform.position;
+    }
     // Update is called once per frame
     void LateUpdate()
     {
